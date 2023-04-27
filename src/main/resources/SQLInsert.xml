@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="InsertTable">
+
+	<insert id="insertPerson" parameterType="com.mybaits.process.vo.PersonVO">
+		insert into hello.test(
+			USER,
+			PASSWORD
+		)values(
+			#{user,jdbcType=VARCHAR,jdbcType=VARCHAR},
+			#{password,jdbcType=VARCHAR,jdbcType=VARCHAR}
+		)
+	</insert>
+	
+</mapper>
