@@ -11,6 +11,7 @@
 	<groupId>com.mybaits</groupId>
 	<artifactId>spring-mybatis-sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>spring-mybatis-sample</name>
 	<description>test api</description>
 	<properties>
