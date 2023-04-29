@@ -6,11 +6,11 @@
 
 	<select id="queryPerson" parameterType="com.mybaits.process.vo.PersonVO" resultType="com.mybaits.process.vo.PersonVO">
 		select 
-			USER,
+			USER_NAME,
 			PASSWORD
-		from  hello.test
+		from dev.users
 		where 
-			binary USER = #{user,jdbcType=VARCHAR}
+			binary USER_NAME = #{user_name,jdbcType=VARCHAR}
 	</select>
 	
 </mapper>

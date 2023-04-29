@@ -22,7 +22,7 @@ public class InsertController {
 		PersonVO personVO = new PersonVO();
 		PersonDAO personDAO = new PersonDAO();
 		try {
-			personVO.setUser(user);
+			personVO.setUser_name(user);
 			personVO.setPassword(password);
 			personVO.setStatusCode("200");
 			personDAO.insertPerson(personVO);

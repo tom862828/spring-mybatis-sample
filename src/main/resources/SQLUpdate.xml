@@ -5,9 +5,9 @@
 <mapper namespace="UpdateTable">
 
 	<update id="updatePerson" parameterType="com.mybaits.process.vo.PersonVO">
-		update hello.test
+		update dev.users
 		set PASSWORD = #{password}
-		where binary USER = #{user,jdbcType=VARCHAR}
+		where binary USER_NAME = #{user_name,jdbcType=VARCHAR}
 	</update>
 	
 </mapper>

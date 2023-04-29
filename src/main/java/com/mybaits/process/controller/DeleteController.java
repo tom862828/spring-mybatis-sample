@@ -23,7 +23,7 @@ public class DeleteController {
 		PersonVO personVO = new PersonVO();
 		PersonDAO personDAO = new PersonDAO();
 		try {
-			personVO.setUser(user);
+			personVO.setUser_name(user);
 			personDAO.deletePerson(personVO);
 			personVO.setStatusCode("200");
 			return ResponseEntity.status(HttpStatus.OK).body(personVO);

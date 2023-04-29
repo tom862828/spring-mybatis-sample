@@ -5,8 +5,8 @@
 <mapper namespace="DeleteTable">
 	
 	<delete id="deletePerson" parameterType="com.mybaits.process.vo.PersonVO">
-		delete from hello.test
-		where binary user = #{user,jdbcType=VARCHAR}
+		delete from dev.users
+		where binary user_name = #{user_name,jdbcType=VARCHAR}
 	</delete>
 	
 </mapper>

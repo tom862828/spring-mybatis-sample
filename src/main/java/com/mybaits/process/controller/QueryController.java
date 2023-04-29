@@ -24,7 +24,7 @@ public class QueryController {
 		PersonDAO personDAO = new PersonDAO();
 		List<PersonVO> resultList = new ArrayList<PersonVO>();
 		try {
-			personVO.setUser(user);
+			personVO.setUser_name(user);
 			resultList = personDAO.getPerson(personVO);
 			
 			for(int i=0;i<resultList.size();i++) {

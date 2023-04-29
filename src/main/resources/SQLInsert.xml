@@ -5,11 +5,11 @@
 <mapper namespace="InsertTable">
 
 	<insert id="insertPerson" parameterType="com.mybaits.process.vo.PersonVO">
-		insert into hello.test(
-			USER,
+		insert into dev.users(
+			USER_NAME,
 			PASSWORD
 		)values(
-			#{user,jdbcType=VARCHAR,jdbcType=VARCHAR},
+			#{user_name,jdbcType=VARCHAR,jdbcType=VARCHAR},
 			#{password,jdbcType=VARCHAR,jdbcType=VARCHAR}
 		)
 	</insert>
